@@ -1,0 +1,89 @@
+{
+  "name": "BoilerPlate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "babel-node server/index.js",
+    "build": "NODE_ENV=production npx env-cmd .env webpack --config ./webpack/config.babel.js",
+    "postinstall": "npm run build",
+    "dev": "nodemon --exec babel-node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClintonBaker/BoilerPlate.git"
+  },
+  "author": "Dillon Baker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClintonBaker/BoilerPlate/issues"
+  },
+  "homepage": "https://github.com/ClintonBaker/BoilerPlate#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-inline-environment-variables": "^0.3.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
+    "env-cmd": "^7.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "file-loader": "^1.1.11",
+    "flow-runtime": "^0.17.0",
+    "jsx-control-statements": "^3.2.8",
+    "mongoose": "^5.0.13",
+    "morgan": "^1.9.0",
+    "passport-local-mongoose": "^5.0.0",
+    "pug": "^2.0.3",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "regenerator-runtime": "^0.11.1",
+    "style-loader": "^0.20.3",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "svg-inline-loader": "^0.8.0",
+    "webpack-dev-middleware": "^3.1.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-inline-environment-variables",
+      "jsx-control-statements",
+      [
+        "babel-plugin-react-css-modules",
+        {
+          "generateScopedName": "[name]_[local]",
+          "handleMissingStyleName": "warn",
+          "context": ".${PWD}/src"
+        }
+      ]
+    ],
+    "presets": [
+      "env",
+      "flow",
+      "stage-0",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-react-css-modules": "^3.3.3",
+    "mini-css-extract-plugin": "^0.4.0",
+    "nodemon": "^1.17.3",
+    "remmy": "^1.0.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13"
+  }
+}

@@ -1,0 +1,7 @@
+contain(maxWidth, x-padding) {
+	padding = "calc((100% - %s) / 2 + %s)" % (maxWidth x-padding);
+	@media screen and (min-width: maxWidth) {
+		padding-left: padding;
+		padding-right: padding;
+	}
+}

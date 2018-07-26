@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/styles/index.styl"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"../css/styles.css","sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\nhtml {\n  font-size: 10px;\n  width: 100vw;\n  height: 100vh;\n}\n"],"sourceRoot":""}

@@ -1,0 +1,8 @@
+layout(which) {
+	if (which in flexRows || which in flexColumns) {
+		display: flex;
+		flex-direction: which;
+	} else {
+		layout: which;
+	}
+}

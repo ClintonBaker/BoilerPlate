@@ -1,0 +1,18 @@
+{
+  "templates": {
+    "comp": {
+      "path": "./.remmy/comp",
+      "dest": "./src/comps"
+    },
+
+    "scene": {
+      "path": "./.remmy/scene",
+      "dest": "./src/scenes"
+    }
+  },
+
+  "variables": {
+    "$STYL": "styl",
+    "$JS": "js"
+  }
+}

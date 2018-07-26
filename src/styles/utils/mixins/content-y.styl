@@ -1,0 +1,7 @@
+content-y(which) {
+	if (@flex-direction in flexRows) {
+		align-items: which;
+	} else if (@flex-direction in flexColumns) {
+		justify-content: which;
+	}
+}
